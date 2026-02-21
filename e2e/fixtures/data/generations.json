@@ -1,0 +1,62 @@
+[
+  {
+    "id": "gen-001",
+    "uid": "test-user-001",
+    "promptId": "prompt-001",
+    "promptText": "A photorealistic depiction of the Korean turtle ship sailing through rough seas.",
+    "status": "completed",
+    "imageUrl": "https://placehold.co/512x512/png?text=Turtle+Ship",
+    "storagePath": "generations/gen-001.png",
+    "creditsCharged": 1,
+    "createdAt": { "seconds": 1704153600 },
+    "completedAt": { "seconds": 1704153610 }
+  },
+  {
+    "id": "gen-002",
+    "uid": "test-user-001",
+    "promptId": "prompt-004",
+    "promptText": "King Sejong the Great studying and creating the Hangul alphabet.",
+    "status": "completed",
+    "imageUrl": "https://placehold.co/512x512/png?text=King+Sejong",
+    "storagePath": "generations/gen-002.png",
+    "creditsCharged": 1,
+    "createdAt": { "seconds": 1704240000 },
+    "completedAt": { "seconds": 1704240012 }
+  },
+  {
+    "id": "gen-003",
+    "uid": "test-user-001",
+    "promptId": "prompt-003",
+    "promptText": "Ancient Goguryeo tomb murals showing the four guardian spirits.",
+    "status": "failed",
+    "imageUrl": null,
+    "storagePath": null,
+    "creditsCharged": 0,
+    "createdAt": { "seconds": 1704326400 },
+    "completedAt": { "seconds": 1704326405 }
+  },
+  {
+    "id": "gen-004",
+    "uid": "test-user-001",
+    "promptId": "prompt-008",
+    "promptText": "An exquisite Goryeo celadon vase with intricate inlaid patterns.",
+    "status": "processing",
+    "imageUrl": null,
+    "storagePath": null,
+    "creditsCharged": 1,
+    "createdAt": { "seconds": 1704412800 },
+    "completedAt": null
+  },
+  {
+    "id": "gen-005",
+    "uid": "test-user-001",
+    "promptId": "prompt-017",
+    "promptText": "Admiral Yi Sun-sin standing on the deck during the Battle of Myeongnyang.",
+    "status": "completed",
+    "imageUrl": "https://placehold.co/512x512/png?text=Admiral+Yi",
+    "storagePath": "generations/gen-005.png",
+    "creditsCharged": 1,
+    "createdAt": { "seconds": 1704499200 },
+    "completedAt": { "seconds": 1704499215 }
+  }
+]

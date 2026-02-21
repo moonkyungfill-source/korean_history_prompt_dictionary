@@ -1,0 +1,17 @@
+rules_version = '2';
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    // Generated images: publicly readable, only server can write
+    match /generations/{uid}/{allPaths=**} {
+      allow read: if true;
+      allow write: if false; // Only server via Admin SDK
+    }
+
+    // Prompt thumbnails: publicly readable, only server can write
+    match /thumbnails/{allPaths=**} {
+      allow read: if true;
+      allow write: if false;
+    }
+  }
+}

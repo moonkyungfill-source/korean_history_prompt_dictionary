@@ -1,0 +1,9 @@
+{
+  "uid": "test-user-001",
+  "email": "test@example.com",
+  "displayName": "Test User",
+  "photoURL": null,
+  "creditBalance": 15,
+  "createdAt": { "seconds": 1704067200 },
+  "updatedAt": { "seconds": 1704067200 }
+}

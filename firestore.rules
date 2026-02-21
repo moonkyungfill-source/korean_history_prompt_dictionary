@@ -1,0 +1,43 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Users: read own, never modify creditBalance from client
+    match /users/{uid} {
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow create: if false; // Only server can create
+      allow update: if false; // Only server can update (especially creditBalance)
+      allow delete: if false;
+
+      // Transactions: read own, never write from client
+      match /transactions/{txId} {
+        allow read: if request.auth != null && request.auth.uid == uid;
+        allow write: if false; // Only server
+      }
+
+      // Bookmarks: read own, write only via server
+      match /bookmarks/{bookmarkId} {
+        allow read: if request.auth != null && request.auth.uid == uid;
+        allow write: if false; // Only server via Admin SDK
+      }
+    }
+
+    // Payments: server only
+    match /payments/{orderId} {
+      allow read, write: if false; // Only server via Admin SDK
+    }
+
+    // Prompts: only published prompts readable, only server can write
+    match /prompts/{promptId} {
+      allow read: if resource.data.status == 'published';
+      allow write: if false; // Only server/admin
+    }
+
+    // Generations: read own, only server can write
+    match /generations/{generationId} {
+      allow read: if request.auth != null && request.auth.uid == resource.data.uid;
+      allow write: if false; // Only server
+    }
+  }
+}

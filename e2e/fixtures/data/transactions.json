@@ -1,0 +1,68 @@
+[
+  {
+    "id": "tx-001",
+    "type": "purchase",
+    "creditsBefore": 0,
+    "creditsAfter": 5,
+    "creditsDelta": 5,
+    "description": "welcome_bonus",
+    "createdAt": { "seconds": 1704067200 }
+  },
+  {
+    "id": "tx-002",
+    "type": "purchase",
+    "creditsBefore": 5,
+    "creditsAfter": 15,
+    "creditsDelta": 10,
+    "packageId": "credit_10",
+    "amountKRW": 1000,
+    "paymentKey": "pay-key-001",
+    "orderId": "order-001",
+    "description": "credit_purchase",
+    "createdAt": { "seconds": 1704153600 }
+  },
+  {
+    "id": "tx-003",
+    "type": "spend",
+    "creditsBefore": 15,
+    "creditsAfter": 14,
+    "creditsDelta": -1,
+    "promptId": "prompt-001",
+    "generationId": "gen-001",
+    "description": "image_generation",
+    "createdAt": { "seconds": 1704153600 }
+  },
+  {
+    "id": "tx-004",
+    "type": "spend",
+    "creditsBefore": 14,
+    "creditsAfter": 13,
+    "creditsDelta": -1,
+    "promptId": "prompt-004",
+    "generationId": "gen-002",
+    "description": "image_generation",
+    "createdAt": { "seconds": 1704240000 }
+  },
+  {
+    "id": "tx-005",
+    "type": "refund",
+    "creditsBefore": 13,
+    "creditsAfter": 14,
+    "creditsDelta": 1,
+    "promptId": "prompt-003",
+    "generationId": "gen-003",
+    "description": "generation_refund",
+    "createdAt": { "seconds": 1704326400 }
+  },
+  {
+    "id": "tx-006",
+    "type": "spend",
+    "creditsBefore": 14,
+    "creditsAfter": 13,
+    "creditsDelta": -1,
+    "promptId": "prompt-008",
+    "generationId": "gen-004",
+    "description": "image_generation",
+    "createdAt": { "seconds": 1704412800 }
+  }
+]
